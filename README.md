@@ -1,6 +1,11 @@
 RunTrace - Prospector components (part of COSEINC's BugMine)
 ============================================================
 
+This fork contains changes to make the tools work under Linux. Currently the following changes are implemented:
+
+*   Updated Makefiles
+*   Updated ccovtrace
+
 RunTracers
 ----------
 
@@ -19,20 +24,8 @@ RunTracer to dump the last basic block executed before a first chance execption 
 ### redflag
 Heap corruption trace tool, logs writes to areas outside allocated heap chunks (windows only).
 
-INSTALLATION
-------------
+More information
+----------------
 
-Requirements:
+For more information please check the original repo at https://github.com/grugq/RunTracer
 
-*   PIN (http://www.pintool.org/)
-*   Compiler suite (Visual Studio Express)
-
-Procedure:
-
-1. Place this source code in the ${PIN}/tools/source/ directory.
-2. ..\nmake.bat ccovtrace
-
-USAGE
------
-
-Launch using the pin.bat tool in the ${PIN}/tools/ directory. See the --help output for more specific command line handling directions.
